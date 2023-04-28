@@ -1,7 +1,6 @@
- # This is a basic workflow that is manually triggered
-#LOWER CAPS OPTION
-name: mainAutoTest
+# This is a basic workflow that is manually triggered
 
+name: mainAutoTest
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
@@ -31,7 +30,7 @@ jobs:
      # Compiles classes to test 
       - name: compile classes
         working-directory: ./src
-        run: javac -cp "../testresources/junit-platform-console-standalone-1.6.0.jar" ./st10251759_poe_p1/ST10251759_POE_P1.java ./st10251759_poe_p1/Login.java  "../test/ST10251759_POE_P1/LoginTest.java"  
+        run: javac -cp "../testresources/junit-platform-console-standalone-1.6.0.jar" ./st10251759_poe_p1/ST10251759_POE_P1.java ./st10251759_poe_p1/Login.java  "../st10251759_poe_p1/LoginTest.java" 
 
     # list contents of src to verify that classess compiled 
       - name: List contents of src directory after compile
@@ -42,12 +41,12 @@ jobs:
        # copy compiled classes to test directory 
       - name : copy compiled classes to testresources directory 
         working-directory: ./src/st10251759_poe_p1
-        run: cp -t  "../../test/st10251759_poe_p1" LoginTest.class ST10251759_POE_P1.class Login.class
+        run: cp -t  "../../test/st10251759_poe_p1" Login.class ST10251759_POE_P1.class 
         
         #copy compiled tests 
       - name : copy compiled Test classes to testresources directory 
         working-directory: ./test/st10251759_poe_p1
-        run: cp -t  "../../testresources/" ST10251759_POE_P1.class Login.class
+        run: cp -t  "../../testresources/" Login.class ST10251759_POE_P1.class
         
         # list contents or directory
       - name: List contents test package
@@ -59,7 +58,5 @@ jobs:
         working-directory: ./test
         run: |
          ls
-         java -jar  "../testresources/junit-platform-console-standalone-1.6.0.jar" -cp "." --select-class  ST10251759_POE_P1.LoginTest  
+         java -jar  "../testresources/junit-platform-console-standalone-1.6.0.jar" -cp "." --select-class  st10251759_poe_p1.LoginTest  
          
-
-     
