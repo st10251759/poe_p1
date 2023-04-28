@@ -1,5 +1,5 @@
  # This is a basic workflow that is manually triggered
-	#LOWER CAPS OPTION
+#LOWER CAPS OPTION
 name: mainAutoTest
 
 # Controls when the workflow will run
