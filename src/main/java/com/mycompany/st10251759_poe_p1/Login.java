@@ -17,7 +17,7 @@ public class Login {//begin login class
     //Construstor metod to pass the parameters from main java class
     public Login(String firstName, String lastName) 
     {//beginning of constructor
-
+        //using this to refer to the variable in the Login class is assign to the string passed through the parameters in main class
         this.firstName = firstName;
         this.lastName = lastName;
 
@@ -81,6 +81,7 @@ public class Login {//begin login class
     */
      
     {//begin getpassword()
+        //use regex code : ".*[0-9].*" => for digits in string, for Captial letters=> ".*[A-Z].*" , for specail characters=> ".*[!@#$%^&*()].*", thr matches will return true or false based on what the string contains
      if (userPassword.length() >= 8 && userPassword.matches(".*[A-Z].*") && userPassword.matches(".*[0-9].*") && userPassword.matches(".*[!@#$%^&*()].*"))
      {//begin if true statement
          return true;
@@ -108,7 +109,7 @@ public class Login {//begin login class
     
     //registerUser() method will return an appropriate message base on validy of userName and userPassword
    public String registerUser() {
-        String userNameFalse, userPasswordFalse, regSuccess;
+        String userNameFalse, userPasswordFalse, registerSuccess;
         if ((checkUserName() == false)) {
             userNameFalse = "Registration unsuccessful. Username is not correctly formatted, please ensure that your username contains an underscore and is no more than 5 characters in length.";
             return userNameFalse; // if username not formatted correctly, will display error message to fix username
@@ -116,13 +117,13 @@ public class Login {//begin login class
             userPasswordFalse = "Registration unsuccessful. Password is not correctly formatted, please ensure that the password contains at least 8 characters, a capital letter, a number and a special character.";
             return userPasswordFalse;//will return error message to fix password if password check is not true
         } else {//else if both username and password checks are true registration is successful 
-            regSuccess = "You have been successfully registered !";
-            return regSuccess; //returns a registration successful message
+            registerSuccess = "You have been successfully registered !";
+            return registerSuccess; //returns a registration successful message
         }//end if
 
     } //registerUser method end
     
-   //method to prompt for userInfor to loginin
+   //method to prompt for userInfor to login
     public void getLoginInfor() 
     {//begin login infor
         loginUsername = JOptionPane.showInputDialog(null, "Please enter your username to login to your account.");
@@ -166,22 +167,32 @@ public void returnLoginStatus()
     //else if boolean loginSuccess = false
     else
     {//begin if unsuccessful login
-        JOptionPane.showMessageDialog(null, "User or password is incorrect, please try again");
+        JOptionPane.showMessageDialog(null, "Username or password is incorrect, please try again","",0);
     }//end if unsuccessful login
     
 }//end returnLoginStatus method
 
 
-//set methods for unit testing
+//set methods for unit testing to assign the string that we are testing
 
 public void setUserName(String userName)
-{
+{//begin 
 this.userName = userName;
-}
+}//end
 
 public void setPassword(String userPassword)
-{
+{//begin
 this.userPassword = userPassword;
-}
-    
+}//end
+   
+public void setLoginUserName(String loginUsername)
+{//begin
+this.loginUsername = loginUsername;
+}//end
+
+public void setLoginUserPassword(String loginPassword)
+{//begin
+this.loginPassword = loginPassword;
+}//end
+
 }//end login class

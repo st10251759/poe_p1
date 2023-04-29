@@ -27,7 +27,10 @@ public class ST10251759_POE_P1 {//begin public class
      //variable declaration
      String firstName, lastName;
      
-     //Geting the user Input using JOptionPane    
+     //Welcome prompt
+     JOptionPane.showMessageDialog(null, "Welcome to Cameron Chetty's Easy Kanban Project!");
+     
+     //Geting the user Input for firstName and lastName using JOptionPane    
     firstName = JOptionPane.showInputDialog(null, "Please enter your first name/s");
     lastName = JOptionPane.showInputDialog(null, "Please enter your last name");
     
@@ -49,8 +52,9 @@ public class ST10251759_POE_P1 {//begin public class
    //Show the registration status by calling the registration validation method
    JOptionPane.showMessageDialog(null, login.registerUser());
    
+   //Login method Calls
    login.getLoginInfor();//prompt user to enter login details after successful registration
-   login.loginUser();//vhecks if login creds matches register creds
+   login.loginUser();//checks if login creds matches register creds
    login.returnLoginStatus();//return appropreiate login message
    
    //Code to exit the system

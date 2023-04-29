@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="com.mycompany.st10251759_poe_p1.LoginTest" time="0.013" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="com.mycompany.st10251759_poe_p1.LoginTest" time="0.009" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.6+9-LTS-190"/>
@@ -61,8 +61,14 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testCheckPasswordComplexityInCorrect" time="0.013"/>
-  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testCheckPasswordComplexityCorrect" time="0"/>
-  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testCheckUserNameInCorrect" time="0"/>
+  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testCheckPasswordComplexityInCorrect" time="0.009"/>
+  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testUserNameFase" time="0"/>
+  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testUserNameTrue" time="0"/>
+  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testLoginTrue" time="0"/>
+  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testLoginFalse" time="0"/>
+  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testPasswordComplexityTrue" time="0"/>
   <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testCheckUserNameCorrect" time="0"/>
+  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testCheckPasswordComplexityCorrect" time="0"/>
+  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testPasswordComplexityFalse" time="0"/>
+  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testCheckUserNameInCorrect" time="0"/>
 </testsuite>
