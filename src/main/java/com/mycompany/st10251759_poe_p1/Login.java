@@ -157,18 +157,18 @@ public class Login {//begin login class
 //method to return approperiate message for a successful or unsuccessful login
 public void returnLoginStatus()
 {//begin returnLoginStatus method
-
+    //while the method loginUser() is false, i.e. UserName and Password is false, show error message and repompt user
+    while(!loginUser())
+    {//begin
+        JOptionPane.showMessageDialog(null, "Username or password is incorrect, please try again","",0);
+        getLoginInfor();
+    }//end
     //if the boolean loginSuccess = true
     if(loginUser())
     {//begin if successful login
         JOptionPane.showMessageDialog(null,"Login is Successful"+"\nWelcome "+firstName+", "+lastName+" it is great to see you again");
     }//end if unsuccessful login
 
-    //else if boolean loginSuccess = false
-    else
-    {//begin if unsuccessful login
-        JOptionPane.showMessageDialog(null, "Username or password is incorrect, please try again","",0);
-    }//end if unsuccessful login
     
 }//end returnLoginStatus method
 

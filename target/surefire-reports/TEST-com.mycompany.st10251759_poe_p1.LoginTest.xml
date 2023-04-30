@@ -62,13 +62,13 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testCheckPasswordComplexityInCorrect" time="0.009"/>
-  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testUserNameFase" time="0"/>
-  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testUserNameTrue" time="0"/>
-  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testLoginTrue" time="0"/>
-  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testLoginFalse" time="0"/>
-  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testPasswordComplexityTrue" time="0"/>
-  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testCheckUserNameCorrect" time="0"/>
   <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testCheckPasswordComplexityCorrect" time="0"/>
   <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testPasswordComplexityFalse" time="0"/>
+  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testPasswordComplexityTrue" time="0"/>
   <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testCheckUserNameInCorrect" time="0"/>
+  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testCheckUserNameCorrect" time="0"/>
+  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testUserNameFase" time="0"/>
+  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testLoginTrue" time="0"/>
+  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testUserNameTrue" time="0"/>
+  <testcase classname="com.mycompany.st10251759_poe_p1.LoginTest" name="com.mycompany.st10251759_poe_p1.LoginTest.testLoginFalse" time="0"/>
 </testsuite>
